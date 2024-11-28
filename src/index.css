@@ -1,0 +1,94 @@
+:root {
+    --font-size-100: 8px;
+    --font-size-200: 10px;
+    --font-size-300: 12px;
+    --font-size-400: 14px;
+    --font-size-500: 16px;
+    --font-size-600: 18px;
+    --font-size-700: 20px;
+    --font-size-800: 24px;
+    --font-size-900: 32px;
+    --font-size-1000: 38px;
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --border-radius-none: 0;
+    --border-radius-small: 2px;
+    --border-radius-medium: 4px;
+    --border-radius-large: 6px;
+    --border-radius-xlarge: 8px;
+    --border-radius-circular: 10000px;
+
+    --spacing-none: 0;
+    --spacing-xxs: 2px;
+    --spacing-xs: 4px;
+    --spacing-snudge: 6px;
+    --spacing-s: 8px;
+    --spacing-mnudge: 10px;
+    --spacing-m: 12px;
+    --spacing-l: 16px;
+    --spacing-xl: 20px;
+    --spacing-xxl: 24px;
+    --spacing-xxxl: 32px;
+
+    --phone: 576px;
+    --tablet: 768px;
+    --desktop: 992px;
+    --large-desktop: 1200px;
+}
+
+[theme="dark"] {
+    --color-primary: #ffc86b;
+    --color-primary-50: #ffc86b50;
+    --color-background: #31333b;
+    --color-surface: #3d3e42;
+    --color-surface-hover: #333437;
+    --color-surface1: #5d5e61;
+    --color-text: #f0f0f0;
+    --color-text-primary: #000000;
+    --color-text-subtle: #b0b0b0;
+
+    --shadow-2: rgba(0, 0, 0, 0.24) 0px 0px 2px, rgba(0, 0, 0, 0.28) 0px 1px 2px;
+    --shadow-4: rgba(0, 0, 0, 0.24) 0px 0px 2px, rgba(0, 0, 0, 0.28) 0px 2px 4px;
+    --shadow-8: rgba(0, 0, 0, 0.24) 0px 0px 2px, rgba(0, 0, 0, 0.28) 0px 4px 8px;
+    --shadow-16: rgba(0, 0, 0, 0.24) 0px 0px 2px, rgba(0, 0, 0, 0.28) 0px 8px 16px;
+    --shadow-28: rgba(0, 0, 0, 0.24) 0px 0px 8px, rgba(0, 0, 0, 0.28) 0px 14px 28px;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("./assets/fonts/OpenSans/OpenSans-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("./assets/fonts/OpenSans/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("./assets/fonts/OpenSans/OpenSans-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("./assets/fonts/OpenSans/OpenSans-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("./assets/fonts/OpenSans/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+
+body {
+    font-family: "OpenSans", sans-serif;
+}

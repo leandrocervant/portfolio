@@ -1,0 +1,76 @@
+:root {
+  --font-unit: 16;
+  --font-size-h1: calc((48 / var(--font-unit)) * 1rem);
+  --font-size-h2: calc((38 / var(--font-unit)) * 1rem);
+  --font-size-h3: calc((32 / var(--font-unit)) * 1rem);
+  --font-size-h4: calc((26 / var(--font-unit)) * 1rem);
+  --font-size-h5: calc((22 / var(--font-unit)) * 1rem);
+  --font-size-h6: calc((18 / var(--font-unit)) * 1rem);
+  --font-size-h1-min: calc((26 / var(--font-unit)) * 1rem);
+  --font-size-h2-min: calc((22 / var(--font-unit)) * 1rem);
+  --font-size-h3-min: calc((18 / var(--font-unit)) * 1rem);
+  --font-size-h4-min: calc((16 / var(--font-unit)) * 1rem);
+  --font-size-h5-min: calc((16 / var(--font-unit)) * 1rem);
+  --font-size-h6-min: calc((13 / var(--font-unit)) * 1rem);
+  --typography-breakpoint-range: var(--phone) var(--desktop);
+}
+
+.Tipography {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.h1 {
+  font-size: clamp(var(--font-size-h1-min), 4vw, var(--font-size-h1));
+}
+
+.h2 {
+  font-size: clamp(var(--font-size-h2-min), 4vw, var(--font-size-h2));
+}
+
+.h3 {
+  font-size: clamp(var(--font-size-h3-min), 4vw, var(--font-size-h3));
+}
+
+.h4 {
+  font-size: clamp(var(--font-size-h4-min), 4vw, var(--font-size-h4));
+}
+
+.h5 {
+  font-size: clamp(var(--font-size-h5-min), 4vw, var(--font-size-h5));
+}
+
+.h6 {
+  font-size: clamp(var(--font-size-h6-min), 4vw, var(--font-size-h6));
+}
+
+.p {
+  font-size: var(--font-size-regular);
+}
+
+.Tipography--small {
+  font-size: var(--font-size-small);
+}
+
+.Tipography--left {
+  text-align: left;
+}
+
+.Tipography--center {
+  text-align: center;
+}
+
+.Tipography--right {
+  text-align: right;
+}
+
+.Tipography--italic {
+  font-style: italic;
+}
+
+.Tipography--semibold {
+  font-weight: var(--font-weight-semi-bold);
+}

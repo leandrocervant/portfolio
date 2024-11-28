@@ -1,0 +1,128 @@
+import { useEffect, useState } from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+import LinkedinIcon from "../../assets/links/linkedin.svg?react";
+import GithubIcon from "../../assets/links/github.svg?react";
+import WhatsAppIcon from "../../assets/links/whatsapp.svg?react";
+import { t } from "../../i18n";
+import { Stack } from "../Stack";
+import { Section } from "../Section";
+import { Button } from "../Button";
+import { Link } from "../Link";
+import { Tipography } from "../Tipography";
+
+import "./WhoAmI.css";
+
+const classNames = {
+  root: "WhoAmI",
+  content: "WhoAmI__content",
+  presentation: "WhoAmI__presentation",
+  links: "WhoAmI__links",
+  link: "WhoAmI__link",
+  buttons: "WhoAmI__buttons",
+  code: "WhoAmI__code",
+  macHeader: "WhoAmI__code__mac-header",
+  macButton: "WhoAmI__code__mac-header__button",
+};
+
+const CODE_WRITE_INTERVAL = 15;
+const CODE_SNIPPET = `import { Developer } from "coolest-professions";
+
+export const WhoAmI = () => {
+  const person = {
+    name: "Leandro Cervantes",
+    company: "Função Sistemas",
+    location: "São Paulo, Brazil",
+    skills: ['react', 'dotnet', 'csharp', 'javascript'],
+    hireable: true,
+  };
+
+  return <Developer person={person} />;
+};`;
+
+const VsCode = () => {
+  const [displayedText, setDisplayedText] = useState("");
+
+  useEffect(() => {
+    const codeEmit = (callback) => {
+      let index = 0;
+      const interval = setInterval(() => {
+        callback(CODE_SNIPPET.substring(0, index));
+        index++;
+        if (index >= CODE_SNIPPET.length) clearInterval(interval);
+      }, CODE_WRITE_INTERVAL);
+    };
+
+    codeEmit((text) => setDisplayedText(text));
+  }, []);
+
+  return (
+    <Stack.Col className={classNames.code}>
+      <Stack.Row className={classNames.macHeader}>
+        <div className={classNames.macButton} type="close"></div>
+        <div className={classNames.macButton} type="minimize"></div>
+        <div className={classNames.macButton} type="maximize"></div>
+      </Stack.Row>
+      <SyntaxHighlighter language="jsx" style={vscDarkPlus}>
+        {displayedText}
+      </SyntaxHighlighter>
+    </Stack.Col>
+  );
+};
+
+const Presentation = () => {
+  const handleClick = () => {
+    const contact = document.getElementById("contact");
+    contact.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <Stack.Col className={classNames.presentation}>
+      <Tipography as="h1">
+        {t("whoAmI.hello")}
+        <br />
+        {t("whoAmI.thisIs")}{" "}
+        <span className="text-emphasis">{t("whoAmI.leandro")}</span>,{" "}
+        {t("whoAmI.im")}
+        <br />
+        {t("whoAmI.professional")}
+      </Tipography>
+      <Stack.Row className={classNames.links}>
+        <Link
+          appearance="primary"
+          icon={LinkedinIcon}
+          href="https://www.linkedin.com/in/leandro-cervantes/"
+        />
+        <Link
+          appearance="primary"
+          icon={GithubIcon}
+          href="https://github.com/leandrocervant"
+        />
+        <Link
+          appearance="primary"
+          icon={WhatsAppIcon}
+          href="whatsapp://send?phone=+5511941563822"
+        />
+      </Stack.Row>
+      <Stack.Row className={classNames.buttons}>
+        <Button appearance="outline" onClick={handleClick} size="large">
+          {t("whoAmI.contactMe")}
+        </Button>
+        <Button onClick={handleClick} size="large">
+          {t("whoAmI.getResume")}
+        </Button>
+      </Stack.Row>
+    </Stack.Col>
+  );
+};
+
+export const WhoAmI = () => {
+  return (
+    <Section className={classNames.root}>
+      <Stack.Row className={classNames.content}>
+        <Presentation />
+        <VsCode />
+      </Stack.Row>
+    </Section>
+  );
+};

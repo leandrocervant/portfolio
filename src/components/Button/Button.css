@@ -1,0 +1,65 @@
+.Button {
+  display: inline-block;
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+.Button--outline {
+  color: var(--color-primary);
+  border: var(--spacing-xxs) solid var(--color-primary);
+  background-color: transparent;
+}
+
+.Button--outline:hover {
+  background-color: var(--color-primary-50);
+  color: var(--color-text-primary);
+}
+
+.Button--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  border: none;
+}
+
+.Button--transparent {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: none;
+}
+
+.Button--transparent:active {
+  background-color: var(--color-primary-50);
+}
+
+.Button--rounded {
+  border-radius: var(--border-radius-large);
+}
+
+.Button--circular {
+  border-radius: var(--border-radius-circular);
+}
+
+.Button--small {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  min-height: 30px;
+  min-width: 30px;
+}
+
+.Button--medium {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.Button--large {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  min-height: 50px;
+  min-width: 50px;
+}

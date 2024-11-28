@@ -1,0 +1,59 @@
+{
+  "header": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "contact": "Contato"
+  },
+  "whoAmI": {
+    "hello": "Olá,",
+    "thisIs": "Eu sou o",
+    "leandro": "Leandro Cervantes",
+    "im": "um",
+    "professional": "Desenvolvedor de Software",
+    "contactMe": "Entre em Contato",
+    "getResume": "Baixe meu Currículo"
+  },
+  "about": {
+    "label": "Sobre Mim",
+    "text": "Sou um desenvolvedor de software apaixonado por tecnologia e inovação. Tenho uma sólida experiência em desenvolvimento full-stack, com foco em .NET Core, React e React Native. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer. Também sou um jogador de equipe, com fortes habilidades de comunicação e uma atitude proativa. Estou animado para fazer parte de uma equipe dinâmica e criativa que valoriza a colaboração e a excelência."
+  },
+  "experience": {
+    "label": "Experiência",
+    "exp1": {
+      "position": "Senior Full-Stack Developer",
+      "company": "Função Sistemas",
+      "year": "2019",
+      "summary": "As a member of an architecture and innovation team, I contributed directly to the planning and implementation of strategic solutions, leveraging advanced concepts and cutting-edge technologies. Key contributions include:",
+      "summaryItem1": "Designed and developed infrastructure for new applications and packages using .NET Core, optimizing the microservices ecosystem.",
+      "summaryItem2": "Implemented architectures for React and React Native applications, focusing on scalability and efficiency.",
+      "summaryItem3": "Developed and integrated authentication models based on OAuth, ensuring robust security for APIs and services.",
+      "summaryItem4": "Designed Single Sign-On (SSO) integration using OpenID and Identity-Server, simplifying applications access.",
+      "summaryItem5": "Deployed modern distribution technologies with Docker and Kubernetes, enhancing scalability and automation.",
+      "summaryItem6": "Set up CI/CD pipelines using Azure DevOps, reducing release times and improving deployment processes.",
+      "summaryItem7": "Structured messaging systems with RabbitMQ, Azure Service Bus, and Amazon MQ, supporting asynchronous communication and processing."
+    },
+    "exp2": {
+      "position": "Technical Assistant",
+      "company": "Smart Modular Technologies",
+      "year": "2012",
+      "summary": "I began as a Production Operator and, through dedication and continuous improvement, was promoted to Technical Assistant. Throughout this journey, I developed strong skills in failure analysis, process automation, hardware and software maintenance, as well as leading improvement projects to optimize production lines and operations. Key contributions include:",
+      "summaryItem1": "Designed a system to monitor memory module input/output, perform failure analysis with a 2D simulator, and manage scrap storage.",
+      "summaryItem2": "Developed an automated service order system based on machine status and yield metrics.",
+      "summaryItem3": "Created a system to manage operator qualifications and work assignments by workstation.",
+      "summaryItem4": "Implemented a yield control solution for the memory testing area.",
+      "summaryItem5": "Designed and deployed an online platform for employee assessments and training courses.",
+      "summaryItem6": "Worked with failure analysis and rework of DRAM memory modules.",
+      "summaryItem7": "Provided hardware and software maintenance for DRAM memory testing, SSD testing, Bluetooth/Wi-Fi module testing, and SMT lines, including project creation and automation improvements.",
+      "summaryItem8": "Performed maintenance on SMT assembly line equipment, including DEK screen printers, Koh Young SPI, Fuji NXT pick-and-place machines, and Saki AOI systems."
+    }
+  },
+  "contact": {
+    "label": "Entre em Contato"
+  },
+  "skills": {
+    "label": "Minhas Habilidades"
+  },
+  "thanks": {
+    "label": "Obrigado pela visita!"
+  }
+}

@@ -1,0 +1,33 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+}
+
+.Header__nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    color: var(--color-text);
+}
+
+.Header__nav a {
+    text-decoration: none;
+    margin: var(--spacing-none) var(--spacing-l);
+    color: var(--color-text);
+    font-size: var(--font-size-700);
+    font-weight: var(--font-weight-medium);
+}
+
+@media (max-width: 768px) {
+    .Header {
+        min-height: 70px;
+    }
+
+    .Header__nav {
+        padding: 0%;
+    }
+}

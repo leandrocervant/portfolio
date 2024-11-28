@@ -1,0 +1,108 @@
+.Experience {
+    background-color: var(--color-surface);
+}
+
+.Experience__title {
+    font-size: var(--font-size-1000);
+    font-weight: var(--font-weight-medium);
+    position: relative;
+    top: calc(-45px);
+    margin: var(--spacing-none);
+}
+
+.Experience__list {
+    gap: var(--spacing-xxl);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Experience__item {
+    gap: var(--spacing-xxl);
+}
+
+.Experience__item__year {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-600);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
+    height: 35px;
+    padding: var(--spacing-s);
+    background-color: var(--color-surface1);
+    margin-top: var(--spacing-s);
+}
+
+.Experience__item__year::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border: 18px solid transparent;
+    border-top-color: var(--color-surface1);
+    transform: rotate(-90deg);
+}
+
+.Experience__item__timeline__bullet {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-600);
+    font-weight: var(--font-weight-medium);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-primary);
+    box-shadow: var(--spacing-none) var(--spacing-none) var(--spacing-m) var(--spacing-m) var(--color-primary-50);
+    margin-top: var(--spacing-m);
+}
+
+.Experience__item__timeline {
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-none) var(--spacing-m);
+}
+
+.Experience__item__timeline__line {
+    flex-grow: 1;
+    width: 1.5px;
+    background: var(--color-text);
+    margin-top: var(--spacing-m);
+}
+
+.Experience__item__year__mb {
+    display: none;
+    color: var(--color-text-subtle);
+    margin-top: var(--spacing-snudge);
+    color: var(--color-primary);
+}
+
+.Experience__item__content p {
+    color: var(--color-text-subtle);
+    font-size: var(--font-size-600);
+    margin: var(--spacing-l) 0;
+}
+
+.Experience__item__content ul {
+    margin: var(--spacing-none);
+}
+
+.Experience__item__content ul p {
+    margin: var(--spacing-s) 0;
+}
+
+@media (max-width: 768px) {
+    .Experience__item__year {
+        display: none !important;
+    }
+
+    .Experience__item__year__mb {
+        display: block;
+    }
+
+    .Experience__item {
+        gap: var(--spacing-snudge);
+    }
+}
