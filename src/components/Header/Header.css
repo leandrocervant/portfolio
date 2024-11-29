@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 2rem;
+    padding: var(--spacing-none) var(--spacing-xxxl);
     color: var(--color-text);
 }
 
@@ -27,6 +27,6 @@
     }
 
     .Header__nav {
-        padding: 0%;
+        padding: var(--spacing-none);
     }
 }
