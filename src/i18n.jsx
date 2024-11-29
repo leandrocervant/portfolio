@@ -102,6 +102,13 @@ export const I18nProvider = ({ children }) => {
   const [lang, setLang] = useState(currentLang.code);
 
   useEffect(() => {
+    const storedLang = sessionStorage.getItem("lang");
+    if (storedLang) {
+      setLang(storedLang);
+    }
+  }, []);
+
+  useEffect(() => {
     setIsReady(false);
     setLanguage(lang).then(() => {
       setTimeout(() => {
