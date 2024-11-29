@@ -1,29 +1,29 @@
 @keyframes move {
-    100% {
-        transform: translate3d(0, 0, 1px) rotate(360deg);
-    }
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
 }
 
 .Background {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: var(--color-background);
-    overflow: hidden;
-    z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: var(--color-background);
+  overflow: hidden;
+  z-index: -1;
 }
 
 .Background__particle {
-    width: 1vmin;
-    height: 1vmin;
-    border-radius: 1vmin;
-    backface-visibility: hidden;
-    position: absolute;
-    animation: move;
-    animation-duration: 1;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    color: var(--color-primary);
+  width: 1vmin;
+  height: 1vmin;
+  border-radius: 1vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 1;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: var(--color-primary);
 }
