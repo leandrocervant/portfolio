@@ -1,11 +1,11 @@
 import { useRef, useState } from "react";
 import { useI18n } from "../../i18n";
 import { mergeClasses } from "../../utilities";
+import { useOutsideClick } from "../../hooks";
 import { Button } from "../Button";
 import { Stack } from "../Stack";
 
 import "./LanguageSwitch.css";
-import { useOutsideClick } from "../../hooks";
 
 const classNames = {
   root: "LanguageSwitch",

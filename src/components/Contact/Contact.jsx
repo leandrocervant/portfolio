@@ -1,10 +1,10 @@
 import { MailIcon, MapPin, PhoneIcon } from "lucide-react";
+import { t } from "../../i18n";
 import { Section } from "../Section";
 import { Stack } from "../Stack";
 import { Tipography } from "../Tipography";
 
 import "./Contact.css";
-import { t } from "../../i18n";
 
 const classNames = {
   root: "Contact",
