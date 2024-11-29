@@ -99,14 +99,10 @@ const I18nContext = createContext();
 
 export const I18nProvider = ({ children }) => {
   const [isReady, setIsReady] = useState(false);
-  const [lang, setLang] = useState(currentLang.code);
-
-  useEffect(() => {
+  const [lang, setLang] = useState(() => {
     const storedLang = sessionStorage.getItem("lang");
-    if (storedLang) {
-      setLang(storedLang);
-    }
-  }, []);
+    return storedLang || defaultLang.code;
+  });
 
   useEffect(() => {
     setIsReady(false);
