@@ -12,15 +12,20 @@
   --font-size-h4-min: calc((16 / var(--font-unit)) * 1rem);
   --font-size-h5-min: calc((16 / var(--font-unit)) * 1rem);
   --font-size-h6-min: calc((13 / var(--font-unit)) * 1rem);
-  --typography-breakpoint-range: var(--phone) var(--desktop);
 }
 
 .Tipography {
-  font-size: 1.5rem;
-  font-weight: var(--font-weight-regular);
-  line-height: 1.5;
   color: var(--color-text);
-  margin: 0;
+  font-weight: var(--font-weight-regular);
+  margin: var(--spacing-s) var(--spacing-none);
+}
+
+.Tipography--inline {
+  font-size: var(--font-size-600);
+}
+
+.Tipography--heading {
+  line-height: 1.5;
 }
 
 .h1 {
@@ -48,7 +53,7 @@
 }
 
 .p {
-  font-size: var(--font-size-regular);
+  font-size: var(--font-size-600);
 }
 
 .Tipography--small {

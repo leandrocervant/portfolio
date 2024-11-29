@@ -13,6 +13,8 @@ import { Tipography } from "../Tipography";
 
 import "./WhoAmI.css";
 
+const base = import.meta.env.BASE_URL;
+
 const classNames = {
   root: "WhoAmI",
   content: "WhoAmI__content",
@@ -26,15 +28,14 @@ const classNames = {
 };
 
 const CODE_WRITE_INTERVAL = 15;
-const CODE_SNIPPET = `import { Developer } from "coolest-professions";
+const CODE_SNIPPET = `import { Developer } from "professions";
 
 export const WhoAmI = () => {
   const person = {
     name: "Leandro Cervantes",
     company: "Função Sistemas",
     location: "São Paulo, Brazil",
-    skills: ['react', 'dotnet', 'csharp', 'javascript'],
-    hireable: true,
+    skills: ['React', '.NET Core', 'CSharp', 'JavaScript']
   };
 
   return <Developer person={person} />;
@@ -71,9 +72,18 @@ const VsCode = () => {
 };
 
 const Presentation = () => {
-  const handleClick = () => {
+  const handleContactMe = () => {
     const contact = document.getElementById("contact");
     contact.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleGetResume = () => {
+    const link = document.createElement("a");
+    link.href = `${base}/resume.pdf`;
+    link.download = "Leandro Cervantes - Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -105,10 +115,10 @@ const Presentation = () => {
         />
       </Stack.Row>
       <Stack.Row className={classNames.buttons}>
-        <Button appearance="outline" onClick={handleClick} size="large">
+        <Button appearance="outline" onClick={handleContactMe} size="large">
           {t("whoAmI.contactMe")}
         </Button>
-        <Button onClick={handleClick} size="large">
+        <Button onClick={handleGetResume} size="large">
           {t("whoAmI.getResume")}
         </Button>
       </Stack.Row>

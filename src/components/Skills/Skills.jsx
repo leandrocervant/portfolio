@@ -41,7 +41,7 @@ export const Skills = () => (
       <Group>
         <Skill name="JavaScript" img="javascript" />
         <Skill name="TypeScript" img="typescript" />
-        <Skill name="Html & Css" img="html-css" />
+        <Skill name="Html & CSS" img="html-css" />
         <Skill name="C#" img="csharp" />
       </Group>
       <Group>

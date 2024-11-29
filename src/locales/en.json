@@ -15,7 +15,9 @@
   },
   "about": {
     "label": "About",
-    "text": "I'm a software developer passionate about technology and innovation. I have a solid background in full-stack development, with a focus on .NET Core, React, and React Native. I'm always looking for new challenges and opportunities to learn and grow. I'm also a team player, with strong communication skills and a proactive attitude. I'm excited to be part of a dynamic and creative team that values collaboration and excellence."
+    "text1": "I am a software developer passionate about technology, innovation, and problem-solving. With solid experience in full-stack development, I mainly work with ",
+    "text2": ".NET Core, React, and ASP.NET Core, integrating the architecture team",
+    "text3": ", where I contribute to the design of scalable and secure solutions. I value collaboration, knowledge exchange, and am always looking for new challenges that allow me to evolve technically, learn new technologies, and add value to the projects I work on."
   },
   "experience": {
     "label": "Experience",
@@ -39,12 +41,11 @@
       "summary": "I began as a Production Operator and, through dedication and continuous improvement, was promoted to Technical Assistant. Throughout this journey, I developed strong skills in failure analysis, process automation, hardware and software maintenance, as well as leading improvement projects to optimize production lines and operations. Key contributions include:",
       "summaryItem1": "Designed a system to monitor memory module input/output, perform failure analysis with a 2D simulator, and manage scrap storage.",
       "summaryItem2": "Developed an automated service order system based on machine status and yield metrics.",
-      "summaryItem3": "Created a system to manage operator qualifications and work assignments by workstation.",
-      "summaryItem4": "Implemented a yield control solution for the memory testing area.",
-      "summaryItem5": "Designed and deployed an online platform for employee assessments and training courses.",
-      "summaryItem6": "Worked with failure analysis and rework of DRAM memory modules.",
-      "summaryItem7": "Provided hardware and software maintenance for DRAM memory testing, SSD testing, Bluetooth/Wi-Fi module testing, and SMT lines, including project creation and automation improvements.",
-      "summaryItem8": "Performed maintenance on SMT assembly line equipment, including DEK screen printers, Koh Young SPI, Fuji NXT pick-and-place machines, and Saki AOI systems."
+      "summaryItem3": "Implemented a yield control solution for the memory testing area.",
+      "summaryItem4": "Designed and deployed an online platform for employee assessments and training courses.",
+      "summaryItem5": "Worked with failure analysis and rework of DRAM memory modules.",
+      "summaryItem6": "Provided hardware and software maintenance for DRAM memory testing, SSD testing, Bluetooth/Wi-Fi module testing, and SMT lines, including project creation and automation improvements.",
+      "summaryItem7": "Performed maintenance on SMT assembly line equipment, including DEK screen printers, Koh Young SPI, Fuji NXT pick-and-place machines, and Saki AOI systems."
     }
   },
   "contact": {

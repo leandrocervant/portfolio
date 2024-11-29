@@ -15,36 +15,37 @@
   },
   "about": {
     "label": "Sobre Mim",
-    "text": "Sou um desenvolvedor de software apaixonado por tecnologia e inovação. Tenho uma sólida experiência em desenvolvimento full-stack, com foco em .NET Core, React e React Native. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer. Também sou um jogador de equipe, com fortes habilidades de comunicação e uma atitude proativa. Estou animado para fazer parte de uma equipe dinâmica e criativa que valoriza a colaboração e a excelência."
+    "text1": "Sou um desenvolvedor de software apaixonado por tecnologia, inovação e resolução de problemas. Com sólida experiência em desenvolvimento full-stack, atuo principalmente com ",
+    "text2": ".NET Core, React e ASP.NET Core, integrando a equipe de arquitetura",
+    "text3": ", onde contribuo para o design de soluções escaláveis e seguras. Valorizo a colaboração, a troca de conhecimento e estou sempre em busca de novos desafios que me permitam evoluir tecnicamente, aprender novas tecnologias e agregar valor aos projetos em que atuo."
   },
   "experience": {
     "label": "Experiência",
     "exp1": {
-      "position": "Senior Full-Stack Developer",
+      "position": "Desenvolvedor Full-Stack Sênior",
       "company": "Função Sistemas",
       "year": "2019",
-      "summary": "As a member of an architecture and innovation team, I contributed directly to the planning and implementation of strategic solutions, leveraging advanced concepts and cutting-edge technologies. Key contributions include:",
-      "summaryItem1": "Designed and developed infrastructure for new applications and packages using .NET Core, optimizing the microservices ecosystem.",
-      "summaryItem2": "Implemented architectures for React and React Native applications, focusing on scalability and efficiency.",
-      "summaryItem3": "Developed and integrated authentication models based on OAuth, ensuring robust security for APIs and services.",
-      "summaryItem4": "Designed Single Sign-On (SSO) integration using OpenID and Identity-Server, simplifying applications access.",
-      "summaryItem5": "Deployed modern distribution technologies with Docker and Kubernetes, enhancing scalability and automation.",
-      "summaryItem6": "Set up CI/CD pipelines using Azure DevOps, reducing release times and improving deployment processes.",
-      "summaryItem7": "Structured messaging systems with RabbitMQ, Azure Service Bus, and Amazon MQ, supporting asynchronous communication and processing."
+      "summary": "Como membro de uma equipe de arquitetura e inovação, contribuí diretamente para o planejamento e implementação de soluções estratégicas, utilizando conceitos avançados e tecnologias de ponta. Contribuições principais incluem:",
+      "summaryItem1": "Desenhei e desenvolvi infraestrutura para novas aplicações e pacotes usando .NET Core, otimizando o ecossistema de microsserviços.",
+      "summaryItem2": "Implementei arquiteturas para aplicações React e React Native, focando em escalabilidade e eficiência.",
+      "summaryItem3": "Desenvolvi e integrei modelos de autenticação baseados em OAuth, garantindo segurança robusta para APIs e serviços.",
+      "summaryItem4": "Desenhei integração de Single Sign-On (SSO) usando OpenID e Identity-Server, simplificando o acesso às aplicações.",
+      "summaryItem5": "Implantei tecnologias modernas de distribuição com Docker e Kubernetes, melhorando a escalabilidade e automação.",
+      "summaryItem6": "Configurei pipelines de CI/CD usando Azure DevOps, reduzindo os tempos de lançamento e melhorando os processos de implantação.",
+      "summaryItem7": "Estruturei sistemas de mensagens com RabbitMQ, Azure Service Bus e Amazon MQ, suportando comunicação e processamento assíncronos."
     },
     "exp2": {
-      "position": "Technical Assistant",
+      "position": "Auxiliar Técnico",
       "company": "Smart Modular Technologies",
       "year": "2012",
-      "summary": "I began as a Production Operator and, through dedication and continuous improvement, was promoted to Technical Assistant. Throughout this journey, I developed strong skills in failure analysis, process automation, hardware and software maintenance, as well as leading improvement projects to optimize production lines and operations. Key contributions include:",
-      "summaryItem1": "Designed a system to monitor memory module input/output, perform failure analysis with a 2D simulator, and manage scrap storage.",
-      "summaryItem2": "Developed an automated service order system based on machine status and yield metrics.",
-      "summaryItem3": "Created a system to manage operator qualifications and work assignments by workstation.",
-      "summaryItem4": "Implemented a yield control solution for the memory testing area.",
-      "summaryItem5": "Designed and deployed an online platform for employee assessments and training courses.",
-      "summaryItem6": "Worked with failure analysis and rework of DRAM memory modules.",
-      "summaryItem7": "Provided hardware and software maintenance for DRAM memory testing, SSD testing, Bluetooth/Wi-Fi module testing, and SMT lines, including project creation and automation improvements.",
-      "summaryItem8": "Performed maintenance on SMT assembly line equipment, including DEK screen printers, Koh Young SPI, Fuji NXT pick-and-place machines, and Saki AOI systems."
+      "summary": "Iniciei minha trajetória como Operador de Produção e, através de dedicação e melhoria contínua, fui promovido a Assistente Técnico. Ao longo dessa jornada, desenvolvi habilidades em análise de falhas, automação de processos, manutenção de hardware e software, além de criar projetos de melhoria para otimizar linhas de produção e operações. Contribuições principais incluem:",
+      "summaryItem1": "Desenhei e desenvolvi um sistema para monitorar entrada/saída de módulos de memória, realizar análise de falhas com um simulador 2D e gerenciar armazenamento de scraps de memória DRAM.",
+      "summaryItem2": "Desenvolvi um sistema automatizado de ordens de serviço baseado no status das máquinas e métricas de rendimento.",
+      "summaryItem3": "Implementei uma solução de controle de yield para a área de testes de memória.",
+      "summaryItem4": "Desenhei e implantei uma plataforma online para avaliações de funcionários e cursos de treinamento.",
+      "summaryItem5": "Trabalhei com análise de falhas e retrabalho de módulos de memória DRAM.",
+      "summaryItem6": "Forneci manutenção de hardware e software para testes de memória DRAM, testes de SSD, testes de módulos Bluetooth/Wi-Fi e linhas SMT, incluindo criação de projetos e melhorias de automação.",
+      "summaryItem7": "Realizei manutenção em equipamentos de linha de montagem SMT, incluindo impressoras de tela DEK, SPI Koh Young, máquinas de colocação Fuji NXT e sistemas AOI Saki."
     }
   },
   "contact": {

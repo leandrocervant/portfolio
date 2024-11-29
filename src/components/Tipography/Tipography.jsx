@@ -31,8 +31,9 @@ export const Tipography = React.forwardRef(
         {...rest}
         className={mergeClasses(
           classNames.root,
-          headingTags && as,
-          inlineTags && as,
+          as,
+          headingTags && "Tipography--heading",
+          inlineTags && "Tipography--inline",
           align && `Tipography--${align}`,
           italic && "Tipography--italic",
           small && "Tipography--small",

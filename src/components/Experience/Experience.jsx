@@ -80,7 +80,6 @@ export const Experience = () => {
             t("experience.exp2.summaryItem5"),
             t("experience.exp2.summaryItem6"),
             t("experience.exp2.summaryItem7"),
-            t("experience.exp2.summaryItem8"),
           ]}
         />
       </Stack.Col>
