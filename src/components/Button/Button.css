@@ -6,6 +6,8 @@
   transition:
     background-color 0.2s ease-in-out,
     color 0.2s ease-in-out;
+
+  -webkit-tap-highlight-color: transparent;
 }
 
 .Button--outline {
