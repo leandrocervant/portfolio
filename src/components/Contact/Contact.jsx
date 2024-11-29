@@ -48,7 +48,7 @@ export const Contact = () => (
       />
       <Card
         icon={MapPin}
-        text="São Paulo, Brazil"
+        text={t("contact.address")}
         href="https://www.google.com.br/maps/place/Atibaia,+SP/@-23.1229725,-46.6000213,13z/data=!3m1!4b1!4m6!3m5!1s0x94cec11f46f1007d:0xc885a2d1bf078e37!8m2!3d-23.1155873!4d-46.5532067!16zL20vMDJ2X2N4?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
       />
     </Stack.Row>

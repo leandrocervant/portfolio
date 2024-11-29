@@ -17,7 +17,7 @@
     "label": "About",
     "text1": "I am a software developer passionate about technology, innovation, and problem-solving. With solid experience in full-stack development, I mainly work with ",
     "text2": ".NET Core, React, and ASP.NET Core, integrating the architecture team",
-    "text3": ", where I contribute to the design of scalable and secure solutions. I value collaboration, knowledge exchange, and am always looking for new challenges that allow me to evolve technically, learn new technologies, and add value to the projects I work on."
+    "text3": ", where I contribute to the design of scalable and secure solutions. I value collaboration, knowledge exchange, and I am always looking for new challenges that allow me to evolve technically, learn new technologies, and add value to the projects I work on."
   },
   "experience": {
     "label": "Experience",
@@ -49,7 +49,8 @@
     }
   },
   "contact": {
-    "label": "Contact Me"
+    "label": "Contact Me",
+    "address": "São Paulo, Brazil"
   },
   "skills": {
     "label": "My Skills"
