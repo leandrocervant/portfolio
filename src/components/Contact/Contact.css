@@ -32,6 +32,5 @@
 
 .Contact__card p {
   color: var(--color-primary);
-  font-size: var(--font-size-600);
   margin: var(--spacing-none);
 }

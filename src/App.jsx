@@ -1,5 +1,8 @@
 import { useRef } from "react";
+import { ChevronUp } from "lucide-react";
 import { I18nProvider } from "./i18n";
+import { useScrollToTop } from "./hooks";
+import { mergeClasses } from "./utilities";
 import {
   About,
   Skills,
@@ -15,9 +18,6 @@ import {
 } from "./components";
 
 import "./App.css";
-import { useScrollToTop } from "./hooks";
-import { ChevronUp } from "lucide-react";
-import { mergeClasses } from "./utilities";
 
 const classNames = {
   root: "App",

@@ -4,7 +4,7 @@
 
 .Experience__title {
     position: relative;
-    top: calc(-45px);
+    top: calc(-38px);
     margin: var(--spacing-none);
 }
 
@@ -23,7 +23,6 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    font-size: var(--font-size-600);
     font-weight: var(--font-weight-medium);
     border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
     height: 35px;
@@ -47,7 +46,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--font-size-600);
     font-weight: var(--font-weight-medium);
     border-radius: 50%;
     height: 25px;
@@ -89,10 +87,6 @@
 }
 
 @media (max-width: 768px) {
-    .Experience__title {
-        top: calc(-30px);
-    }
-
     .Experience__item__year {
         display: none !important;
     }

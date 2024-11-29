@@ -41,7 +41,7 @@ export const WhoAmI = () => {
   return <Developer person={person} />;
 };`;
 
-const VsCode = () => {
+const Code = () => {
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
@@ -80,7 +80,7 @@ const Presentation = () => {
   const handleGetResume = () => {
     const link = document.createElement("a");
     link.href = `${base}/resume.pdf`;
-    link.download = "Leandro Cervantes - Resume.pdf";
+    link.download = "Leandro Cervantes.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -92,7 +92,7 @@ const Presentation = () => {
         {t("whoAmI.hello")}
         <br />
         {t("whoAmI.thisIs")}{" "}
-        <span className="text-emphasis">{t("whoAmI.leandro")}</span>,{" "}
+        <Tipography as="span">{t("whoAmI.leandro")}</Tipography>,{" "}
         {t("whoAmI.im")}
         <br />
         {t("whoAmI.professional")}
@@ -131,7 +131,7 @@ export const WhoAmI = () => {
     <Section className={classNames.root}>
       <Stack.Row className={classNames.content}>
         <Presentation />
-        <VsCode />
+        <Code />
       </Stack.Row>
     </Section>
   );

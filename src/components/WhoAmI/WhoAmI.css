@@ -16,9 +16,14 @@
 }
 
 .WhoAmI__presentation h1 {
-    font-size: var(--font-size-1000);
     font-weight: var(--font-weight-light);
     margin: var(--spacing-xxl) var(--spacing-none);
+}
+
+.WhoAmI__presentation h1 span {
+    color: var(--color-primary);
+    font-size: inherit;
+    font-weight: var(--font-weight-medium);
 }
 
 .WhoAmI__links {
@@ -35,12 +40,6 @@
 
 .WhoAmI__buttons {
     gap: var(--spacing-m);
-}
-
-.text-emphasis {
-    color: var(--color-primary);
-    font-size: var(--font-size-large);
-    font-weight: 600;
 }
 
 .WhoAmI__code {

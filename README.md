@@ -74,6 +74,7 @@ App.css
     hooks/
         index.js
         useOutsideClick.js
+        useScrollToTop.js
     i18n.jsx
     index.css
     index.jsx
