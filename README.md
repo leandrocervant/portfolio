@@ -80,3 +80,5 @@ App.css
     index.jsx
     locales/
     utilities/
+        index.js
+        mergeClasses.js
