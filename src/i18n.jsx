@@ -47,7 +47,7 @@ const setLanguage = async (langCode) => {
     }
   }
 
-  sessionStorage.setItem("lang", langCode);
+  localStorage.setItem("lang", langCode);
 };
 
 const findPartsForData = (data, parts) => {
@@ -100,7 +100,7 @@ const I18nContext = createContext();
 export const I18nProvider = ({ children }) => {
   const [isReady, setIsReady] = useState(false);
   const [lang, setLang] = useState(() => {
-    const storedLang = sessionStorage.getItem("lang");
+    const storedLang = localStorage.getItem("lang");
     return storedLang || defaultLang.code;
   });
 

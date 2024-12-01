@@ -25,7 +25,7 @@ const classNames = {
   topButton: "App__topButton",
 };
 
-const Main = () => {
+const AppBase = () => {
   const ref = useRef();
   const { showButton, scrollToTop } = useScrollToTop(ref);
 
@@ -60,7 +60,7 @@ const Main = () => {
 function App() {
   return (
     <I18nProvider>
-      <Main />
+      <AppBase />
     </I18nProvider>
   );
 }
