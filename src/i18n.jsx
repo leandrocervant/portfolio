@@ -5,7 +5,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import fallbackLangData from "./locales/pt-BR.json";
+import fallbackLangData from "./locales/en.json";
 
 const isDevelopment = import.meta.env.DEV;
 
