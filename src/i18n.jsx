@@ -19,36 +19,17 @@ const languages = [
 const TEST_LANG_CODE = "__test__";
 if (isDevelopment) {
   languages.unshift(
-    { code: TEST_LANG_CODE, label: "test language" }
-    // {
-    //   code: `${TEST_LANG_CODE}.rtl`,
-    //   label: "\u{202a}test language (rtl)\u{202c}",
-    //   rtl: true,
-    // }
+    { code: TEST_LANG_CODE, label: "test language" },
+    {
+      code: `${TEST_LANG_CODE}.rtl`,
+      label: "\u{202a}test language (rtl)\u{202c}",
+      rtl: true,
+    }
   );
 }
 
 let currentLang = defaultLang;
 let currentLangData = {};
-
-const setLanguage = async (langCode) => {
-  currentLang = languages.find((lang) => lang.code === langCode) || defaultLang;
-  document.documentElement.dir = currentLang.rtl ? "rtl" : "ltr";
-  document.documentElement.lang = currentLang.code;
-
-  if (langCode.startsWith(TEST_LANG_CODE)) {
-    currentLangData = {};
-  } else {
-    try {
-      currentLangData = await import(`./locales/${currentLang.code}.json`);
-    } catch (error) {
-      console.error(`Failed to load language ${langCode}:`, error.message);
-      currentLangData = fallbackLangData;
-    }
-  }
-
-  localStorage.setItem("lang", langCode);
-};
 
 const findPartsForData = (data, parts) => {
   for (let index = 0; index < parts.length; ++index) {
@@ -98,20 +79,39 @@ export const t = (path, replacement = null, fallback = null) => {
 const I18nContext = createContext();
 
 export const I18nProvider = ({ children }) => {
-  const [isReady, setIsReady] = useState(false);
-  const [lang, setLang] = useState(() => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [langCode, setLangCode] = useState(() => {
     const storedLang = localStorage.getItem("lang");
     return storedLang || defaultLang.code;
   });
 
   useEffect(() => {
-    setIsReady(false);
-    setLanguage(lang).then(() => {
-      setTimeout(() => {
-        setIsReady(true);
-      });
-    });
-  }, [lang]);
+    const updateLang = async () => {
+      setIsLoading(true);
+
+      currentLang =
+        languages.find((lang) => lang.code === langCode) || defaultLang;
+      document.documentElement.dir = currentLang.rtl ? "rtl" : "ltr";
+      document.documentElement.lang = currentLang.code;
+
+      if (langCode.startsWith(TEST_LANG_CODE)) {
+        currentLangData = {};
+      } else {
+        try {
+          currentLangData = await import(`./locales/${currentLang.code}.json`);
+        } catch (error) {
+          console.error(`Failed to load language ${langCode}:`, error.message);
+          currentLangData = fallbackLangData;
+        }
+      }
+
+      localStorage.setItem("lang", langCode);
+
+      setTimeout(() => setIsLoading(false), 100);
+    };
+
+    updateLang();
+  }, [langCode]);
 
   return (
     <I18nContext.Provider
@@ -121,18 +121,15 @@ export const I18nProvider = ({ children }) => {
         languages,
         setLanguage: useCallback(
           (lang) => {
-            setLang(lang);
+            setLangCode(lang);
           },
-          [setLang]
+          [setLangCode]
         ),
       }}
     >
-      {isReady && children}
+      {!isLoading && children}
     </I18nContext.Provider>
   );
 };
 
-export const useI18n = () => {
-  const context = useContext(I18nContext);
-  return context;
-};
+export const useI18n = () => useContext(I18nContext);

@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { ChevronUp } from "lucide-react";
-import { I18nProvider } from "./i18n";
 import { useScrollToTop } from "./hooks";
 import { mergeClasses } from "./utilities";
 import {
@@ -25,9 +24,9 @@ const classNames = {
   topButton: "App__topButton",
 };
 
-const AppBase = () => {
+function App() {
   const ref = useRef();
-  const { showButton, scrollToTop } = useScrollToTop(ref);
+  const { showTopButton, scrollToTop } = useScrollToTop(ref);
 
   return (
     <Stack.Col ref={ref} className={classNames.root} theme="dark">
@@ -46,22 +45,13 @@ const AppBase = () => {
         onClick={scrollToTop}
         className={mergeClasses(
           classNames.topButton,
-          showButton && `${classNames.topButton}--show`
+          showTopButton && `${classNames.topButton}--show`
         )}
       >
         <ChevronUp />
       </Button>
-
       <Background />
     </Stack.Col>
-  );
-};
-
-function App() {
-  return (
-    <I18nProvider>
-      <AppBase />
-    </I18nProvider>
   );
 }
 
