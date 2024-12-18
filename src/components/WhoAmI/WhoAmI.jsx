@@ -66,7 +66,15 @@ const Code = () => {
         <div className={classNames.macButton} type="minimize"></div>
         <div className={classNames.macButton} type="maximize"></div>
       </Stack.Row>
-      <SyntaxHighlighter language="jsx" style={vscDarkPlus}>
+      <SyntaxHighlighter
+        language="jsx"
+        style={vscDarkPlus}
+        wrapLines={true}
+        lineProps={{
+          style: { wordBreak: "break-all", whiteSpace: "pre-wrap" },
+        }}
+        customStyle={{ maxWidth: "100%" }}
+      >
         {displayedText}
       </SyntaxHighlighter>
     </Stack.Col>

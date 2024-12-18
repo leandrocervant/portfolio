@@ -45,6 +45,7 @@
 .WhoAmI__code {
   min-height: 390px;
   min-width: 555px;
+  max-width: 555px;
   background-color: #1e1e1e;
   border-radius: var(--border-radius-large);
   padding: var(--spacing-s);
