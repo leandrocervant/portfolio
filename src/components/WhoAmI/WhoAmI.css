@@ -43,7 +43,7 @@
 }
 
 .WhoAmI__code {
-  min-height: 390px;
+  min-height: 455px;
   min-width: 555px;
   max-width: 555px;
   background-color: #1e1e1e;
@@ -89,7 +89,7 @@
   }
 
   .WhoAmI__code {
-    min-height: 330px;
+    min-height: 385px;
     min-width: 100%;
   }
 
