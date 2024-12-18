@@ -33,12 +33,14 @@ const CODE_SNIPPET = `import { Developer } from "professions";
 export const WhoAmI = () => {
   const person = {
     name: "Leandro Cervantes",
+    title: "Full Stack Developer",
     company: "Função Sistemas",
     location: "São Paulo, Brazil",
-    skills: ['React', '.NET Core', 'CSharp', 'JavaScript']
+    skills: ['React', '.NET Core', 'C#', 'JavaScript'],
+    passion: "Transforming ideas into solutions with clean and efficient code."
   };
 
-  return <Developer person={person} />;
+  return <Developer {...person} />;
 };`;
 
 const Code = () => {
