@@ -14,7 +14,7 @@ const classNames = {
   option: "LanguageSwitch__option",
 };
 
-export const Option = ({ children, selected, className, ...rest }) => {
+const Option = ({ children, selected, className, ...rest }) => {
   return (
     <Stack.Row
       className={mergeClasses(
