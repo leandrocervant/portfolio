@@ -1,7 +1,7 @@
 import { t } from "../../i18n";
 import { Section } from "../Section";
 import { Stack } from "../Stack";
-import { Tipography } from "../Tipography";
+import { Typography } from "../Typography";
 
 import "./Skills.css";
 
@@ -21,7 +21,7 @@ const Skill = ({ name, img }) => {
       alignItems="center"
     >
       <img src={src} alt={name} />
-      <Tipography as="h5">{name}</Tipography>
+      <Typography as="h5">{name}</Typography>
     </Stack.Col>
   );
 };
@@ -34,9 +34,9 @@ const Group = ({ children }) => (
 
 export const Skills = () => (
   <Section className={classNames.root}>
-    <Tipography as="h2" align="center">
+    <Typography as="h2" align="center">
       {t("skills.label")}
-    </Tipography>
+    </Typography>
     <Stack.Col className={classNames.list}>
       <Group>
         <Skill name="JavaScript" img="javascript" />

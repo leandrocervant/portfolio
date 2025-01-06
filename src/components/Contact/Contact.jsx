@@ -2,7 +2,7 @@ import { MailIcon, MapPin, PhoneIcon } from "lucide-react";
 import { t } from "../../i18n";
 import { Section } from "../Section";
 import { Stack } from "../Stack";
-import { Tipography } from "../Tipography";
+import { Typography } from "../Typography";
 
 import "./Contact.css";
 
@@ -25,16 +25,16 @@ const Card = ({ icon, text, href }) => {
   return (
     <Stack.Row className={classNames.card} onClick={handleClick}>
       <Component />
-      <Tipography as="p">{text}</Tipography>
+      <Typography as="p">{text}</Typography>
     </Stack.Row>
   );
 };
 
 export const Contact = () => (
   <Section className={classNames.root}>
-    <Tipography id="contact" as="h2" align="center">
+    <Typography id="contact" as="h2" align="center">
       {t("contact.label")}
-    </Tipography>
+    </Typography>
     <Stack.Row className={classNames.cards}>
       <Card
         icon={MailIcon}

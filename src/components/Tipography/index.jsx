@@ -1,1 +1,1 @@
-export * from "./Tipography";
+export * from "./Typography";

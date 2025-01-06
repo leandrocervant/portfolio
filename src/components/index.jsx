@@ -6,7 +6,7 @@ export * from "./Experience";
 export * from "./Background";
 export * from "./Stack";
 export * from "./Section";
-export * from "./Tipography";
+export * from "./Typography";
 export * from "./Contact";
 export * from "./Links";
 export * from "./Thanks";

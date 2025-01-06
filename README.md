@@ -69,7 +69,7 @@ App.css
         Skills/
         Stack/
         Thanks/
-        Tipography/
+        Typography/
         WhoAmI/
     hooks/
         index.js

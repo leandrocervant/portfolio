@@ -1,7 +1,7 @@
 import { t } from "../../i18n";
 import { Section } from "../Section";
 import { Stack } from "../Stack";
-import { Tipography } from "../Tipography";
+import { Typography } from "../Typography";
 
 import "./Experience.css";
 
@@ -27,16 +27,16 @@ const ExperienceItem = ({ year, position, company, summary, summaryItems }) => {
         <div className={classNames.line}></div>
       </Stack.Col>
       <Stack.Col className={classNames.content}>
-        <Tipography as="h3">{position}</Tipography>
-        <Tipography as="h4">{company}</Tipography>
-        <Tipography as="h5" className={classNames.yearMb}>
+        <Typography as="h3">{position}</Typography>
+        <Typography as="h4">{company}</Typography>
+        <Typography as="h5" className={classNames.yearMb}>
           {year}
-        </Tipography>
-        <Tipography as="p">{summary}</Tipography>
+        </Typography>
+        <Typography as="p">{summary}</Typography>
         {summaryItems && (
           <ul>
             {summaryItems.map((item, index) => (
-              <li key={index}>{<Tipography as="p">{item}</Tipography>}</li>
+              <li key={index}>{<Typography as="p">{item}</Typography>}</li>
             ))}
           </ul>
         )}
@@ -48,9 +48,9 @@ const ExperienceItem = ({ year, position, company, summary, summaryItems }) => {
 export const Experience = () => {
   return (
     <Section className={classNames.root}>
-      <Tipography as="h2" id="experience" className={classNames.title}>
+      <Typography as="h2" id="experience" className={classNames.title}>
         {t("experience.label")}
-      </Tipography>
+      </Typography>
       <Stack.Col className={classNames.list}>
         <ExperienceItem
           year={t("experience.exp1.year")}

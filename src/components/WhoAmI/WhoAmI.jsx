@@ -9,7 +9,7 @@ import { Stack } from "../Stack";
 import { Section } from "../Section";
 import { Button } from "../Button";
 import { Link } from "../Link";
-import { Tipography } from "../Tipography";
+import { Typography } from "../Typography";
 
 import "./WhoAmI.css";
 
@@ -98,15 +98,15 @@ const Presentation = () => {
 
   return (
     <Stack.Col className={classNames.presentation}>
-      <Tipography as="h1">
+      <Typography as="h1">
         {t("whoAmI.hello")}
         <br />
         {t("whoAmI.thisIs")}{" "}
-        <Tipography as="span">{t("whoAmI.leandro")}</Tipography>,{" "}
+        <Typography as="span">{t("whoAmI.leandro")}</Typography>,{" "}
         {t("whoAmI.im")}
         <br />
         {t("whoAmI.professional")}
-      </Tipography>
+      </Typography>
       <Stack.Row className={classNames.links}>
         <Link
           appearance="primary"

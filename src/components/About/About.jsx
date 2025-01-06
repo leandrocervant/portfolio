@@ -1,6 +1,6 @@
 import { t } from "../../i18n";
 import { Section } from "../Section";
-import { Tipography } from "../Tipography";
+import { Typography } from "../Typography";
 
 import "./About.css";
 
@@ -10,11 +10,11 @@ const classNames = {
 
 export const About = () => (
   <Section id="about" className={classNames.root}>
-    <Tipography as="h2">{t("about.label")}</Tipography>
-    <Tipography as="p">
+    <Typography as="h2">{t("about.label")}</Typography>
+    <Typography as="p">
       {t("about.text1")}
-      <Tipography as="span">{t("about.text2")}</Tipography>
+      <Typography as="span">{t("about.text2")}</Typography>
       {t("about.text3")}
-    </Tipography>
+    </Typography>
   </Section>
 );
