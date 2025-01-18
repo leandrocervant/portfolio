@@ -26,7 +26,7 @@ const classNames = {
 
 function App() {
   const ref = useRef();
-  const { showTopButton, scrollToTop } = useScrollToTop(ref);
+  const { showButton: showTopButton, scrollToTop } = useScrollToTop(ref);
 
   return (
     <Stack.Col ref={ref} className={classNames.root} theme="dark">
