@@ -10,8 +10,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-/* apparences */
-
 .outline {
   color: var(--color-primary);
   border: var(--spacing-xxs) solid var(--color-primary);
@@ -39,8 +37,6 @@
   background-color: var(--color-primary-50);
 }
 
-/* shapes */
-
 .rounded {
   border-radius: var(--border-radius-large);
 }
@@ -48,8 +44,6 @@
 .circular {
   border-radius: var(--border-radius-circular);
 }
-
-/* sizes */
 
 .small {
   padding: 0.25rem 0.5rem;
@@ -66,8 +60,8 @@
 }
 
 .large {
-  padding: 0.75rem 1.5rem;
-  font-size: 1.125rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   min-height: 50px;
   min-width: 50px;
 }

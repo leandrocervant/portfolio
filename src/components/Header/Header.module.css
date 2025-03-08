@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 768px) {
-  .Header {
+  .root {
     min-height: 70px;
   }
 
