@@ -1,18 +1,18 @@
-.Link {
+.root {
   cursor: pointer;
   height: 40px;
   width: 40px;
 }
 
-.Link--neutral {
+.neutral {
   fill: var(--color-text);
 }
 
-.Link--primary {
+.primary {
   fill: var(--color-primary);
 }
 
-.Link__link svg {
+.link svg {
   height: 40px;
   width: 40px;
 }

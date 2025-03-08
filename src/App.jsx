@@ -16,13 +16,7 @@ import {
   Button,
 } from "./components";
 
-import "./App.css";
-
-const classNames = {
-  root: "App",
-  content: "App__content",
-  topButton: "App__topButton",
-};
+import classNames from "./App.module.css";
 
 function App() {
   const ref = useRef();
@@ -45,7 +39,7 @@ function App() {
         onClick={scrollToTop}
         className={mergeClasses(
           classNames.topButton,
-          showTopButton && `${classNames.topButton}--show`
+          showTopButton && classNames[`topButton--show`]
         )}
       >
         <ChevronUp />

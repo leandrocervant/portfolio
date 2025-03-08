@@ -11,21 +11,9 @@ import { Button } from "../Button";
 import { Link } from "../Link";
 import { Typography } from "../Typography";
 
-import "./WhoAmI.css";
+import classNames from "./WhoAmI.module.css";
 
 const base = import.meta.env.BASE_URL;
-
-const classNames = {
-  root: "WhoAmI",
-  content: "WhoAmI__content",
-  presentation: "WhoAmI__presentation",
-  links: "WhoAmI__links",
-  link: "WhoAmI__link",
-  buttons: "WhoAmI__buttons",
-  code: "WhoAmI__code",
-  macHeader: "WhoAmI__code__mac-header",
-  macButton: "WhoAmI__code__mac-header__button",
-};
 
 const CODE_WRITE_INTERVAL = 15;
 const CODE_SNIPPET = `import { Developer } from "professions";
@@ -61,10 +49,10 @@ const Code = () => {
 
   return (
     <Stack.Col className={classNames.code}>
-      <Stack.Row className={classNames.macHeader}>
-        <div className={classNames.macButton} type="close"></div>
-        <div className={classNames.macButton} type="minimize"></div>
-        <div className={classNames.macButton} type="maximize"></div>
+      <Stack.Row className={classNames["code-header"]}>
+        <div className={classNames["code-button"]} type="close"></div>
+        <div className={classNames["code-button"]} type="minimize"></div>
+        <div className={classNames["code-button"]} type="maximize"></div>
       </Stack.Row>
       <SyntaxHighlighter
         language="jsx"

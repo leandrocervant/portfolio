@@ -2,11 +2,7 @@ import { t } from "../../i18n";
 import { Section } from "../Section";
 import { Typography } from "../Typography";
 
-import "./Thanks.css";
-
-const classNames = {
-  root: "Thanks",
-};
+import classNames from "./Thanks.module.css";
 
 export const Thanks = () => (
   <Section className={classNames.root}>

@@ -1,12 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Stack } from "../Stack";
 
-import "./Background.css";
-
-const classNames = {
-  root: "Background",
-  particle: "Background__particle",
-};
+import classNames from "./Background.module.css";
 
 const PARTICLE_COUNT = 50;
 const PARTICLE_SIZE = 1;

@@ -5,14 +5,7 @@ import { useOutsideClick } from "../../hooks";
 import { Button } from "../Button";
 import { Stack } from "../Stack";
 
-import "./LanguageSwitch.css";
-
-const classNames = {
-  root: "LanguageSwitch",
-  button: "LanguageSwitch__button",
-  menu: "LanguageSwitch__menu",
-  option: "LanguageSwitch__option",
-};
+import classNames from "./LanguageSwitch.module.css";
 
 const Option = ({ children, selected, className, ...rest }) => {
   return (

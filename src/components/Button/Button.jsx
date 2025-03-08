@@ -1,11 +1,7 @@
 import React from "react";
 import { mergeClasses } from "../../utilities";
 
-import "./Button.css";
-
-const classNames = {
-  root: "Button",
-};
+import classNames from "./Button.module.css";
 
 export const Button = React.forwardRef(
   (
@@ -20,9 +16,9 @@ export const Button = React.forwardRef(
   ) => {
     const buttonClasses = mergeClasses(
       classNames.root,
-      `${classNames.root}--${appearance}`,
-      `${classNames.root}--${shape}`,
-      `${classNames.root}--${size}`,
+      classNames[appearance],
+      classNames[shape],
+      classNames[size],
       className
     );
 

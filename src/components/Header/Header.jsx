@@ -1,12 +1,7 @@
 import { t } from "../../i18n";
 import { LanguageSwitch } from "../LanguageSwitch";
 
-import "./Header.css";
-
-const classNames = {
-  root: "Header",
-  nav: "Header__nav",
-};
+import classNames from "./Header.module.css";
 
 export const Header = () => (
   <header className={classNames.root}>

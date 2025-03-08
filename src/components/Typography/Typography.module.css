@@ -1,4 +1,4 @@
-.Typography {
+.root {
   color: var(--color-text);
   font-weight: var(--font-weight-regular);
   margin: var(--spacing-s) var(--spacing-none);
@@ -32,30 +32,30 @@
   font-size: var(--font-size-500);
 }
 
-.Typography--inline {
+.inline {
   font-size: var(--font-size-500);
 }
 
-.Typography--small {
+.small {
   font-size: var(--font-size-200);
 }
 
-.Typography--left {
+.left {
   text-align: left;
 }
 
-.Typography--center {
+.center {
   text-align: center;
 }
 
-.Typography--right {
+.right {
   text-align: right;
 }
 
-.Typography--italic {
+.italic {
   font-style: italic;
 }
 
-.Typography--semibold {
+.semibold {
   font-weight: var(--font-weight-semi-bold);
 }

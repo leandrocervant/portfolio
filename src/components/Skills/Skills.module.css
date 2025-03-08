@@ -1,21 +1,21 @@
-.Skills {
+.root {
   align-items: center;
 }
 
-.Skills h2 {
+.root h2 {
   margin-bottom: var(--spacing-m);
 }
 
-.Skills__list {
+.list {
   gap: var(--spacing-xxl);
 }
 
-.Skills__item-group {
+.item-group {
   flex-wrap: wrap;
   gap: var(--spacing-xl);
 }
 
-.Skills__item {
+.item {
   border-radius: var(--border-radius-xlarge);
   background-color: var(--color-surface);
   height: 225px;
@@ -26,22 +26,22 @@
     color 0.3s;
 }
 
-.Skills__item:hover {
+.item:hover {
   color: var(--color-text);
   background-color: var(--color-primary);
 }
 
-.Skills__item img {
+.item img {
   height: 70px;
   margin-bottom: var(--spacing-m);
 }
 
-.Skills__item h3 {
+.item h3 {
   text-align: center;
 }
 
 @media (max-width: 768px) {
-  .Skills__item {
+  .item {
     max-width: 175px;
     width: 100%;
   }

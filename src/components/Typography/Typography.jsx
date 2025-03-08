@@ -1,11 +1,7 @@
 import React from "react";
 import { mergeClasses } from "../../utilities";
 
-import "./Typography.css";
-
-const classNames = {
-  root: "Typography",
-};
+import classNames from "./Typography.module.css";
 
 export const Typography = React.forwardRef(
   (
@@ -31,13 +27,13 @@ export const Typography = React.forwardRef(
         {...rest}
         className={mergeClasses(
           classNames.root,
-          as,
-          headingTags && "Typography--heading",
-          inlineTags && "Typography--inline",
-          align && `Typography--${align}`,
-          italic && "Typography--italic",
-          small && "Typography--small",
-          semibold && "Typography--semibold",
+          classNames[as],
+          headingTags && classNames.heading,
+          inlineTags && classNames.inline,
+          align && classNames[align],
+          italic && classNames.italic,
+          small && classNames.small,
+          semibold && classNames.semibold,
           className
         )}
       >

@@ -3,20 +3,7 @@ import { Section } from "../Section";
 import { Stack } from "../Stack";
 import { Typography } from "../Typography";
 
-import "./Experience.css";
-
-const classNames = {
-  root: "Experience",
-  title: "Experience__title",
-  list: "Experience__list",
-  item: "Experience__item",
-  year: "Experience__item__year",
-  yearMb: "Experience__item__year__mb",
-  timeline: "Experience__item__timeline",
-  bullet: "Experience__item__timeline__bullet",
-  line: "Experience__item__timeline__line",
-  content: "Experience__item__content",
-};
+import classNames from "./Experience.module.css";
 
 const ExperienceItem = ({ year, position, company, summary, summaryItems }) => {
   return (
@@ -29,7 +16,7 @@ const ExperienceItem = ({ year, position, company, summary, summaryItems }) => {
       <Stack.Col className={classNames.content}>
         <Typography as="h3">{position}</Typography>
         <Typography as="h4">{company}</Typography>
-        <Typography as="h5" className={classNames.yearMb}>
+        <Typography as="h5" className={classNames["year--mb"]}>
           {year}
         </Typography>
         <Typography as="p">{summary}</Typography>

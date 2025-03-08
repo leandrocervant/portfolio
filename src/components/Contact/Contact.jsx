@@ -4,13 +4,7 @@ import { Section } from "../Section";
 import { Stack } from "../Stack";
 import { Typography } from "../Typography";
 
-import "./Contact.css";
-
-const classNames = {
-  root: "Contact",
-  cards: "Contact__cards",
-  card: "Contact__card",
-};
+import classNames from "./Contact.module.css";
 
 const Card = ({ icon, text, href }) => {
   const Component = icon;

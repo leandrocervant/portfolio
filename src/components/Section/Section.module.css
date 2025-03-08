@@ -1,21 +1,21 @@
-.Section {
+.root {
   padding: var(--spacing-m) var(--spacing-xl) 60px;
 }
 
-.Section__content {
+.content {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
 @media (min-width: 1300px) {
-  .Section__content {
+  .content {
     max-width: 1300px;
   }
 }
 
 @media (max-width: 768px) {
-  .Section {
+  .root {
     padding: var(--spacing-m) var(--spacing-m) 60px;
   }
 }

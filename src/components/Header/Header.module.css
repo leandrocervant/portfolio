@@ -1,4 +1,4 @@
-.Header {
+.root {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -6,7 +6,7 @@
   min-height: 100px;
 }
 
-.Header__nav {
+.nav {
   display: flex;
   align-items: center;
   height: 100%;
@@ -14,7 +14,7 @@
   color: var(--color-text);
 }
 
-.Header__nav a {
+.nav a {
   text-decoration: none;
   margin: var(--spacing-none) var(--spacing-l);
   color: var(--color-text);
@@ -26,7 +26,7 @@
     min-height: 70px;
   }
 
-  .Header__nav {
+  .nav {
     padding: var(--spacing-none);
   }
 }

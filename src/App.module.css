@@ -1,11 +1,11 @@
-.App {
+.root {
     color: var(--color-text);
     overflow: auto;
     height: 100%;
     scroll-behavior: smooth;
 }
 
-.App__topButton {
+.topButton {
     opacity: 0;
     visibility: hidden;
     position: fixed;
@@ -16,7 +16,7 @@
     transition: 0.4s;
 }
 
-.App__topButton--show {
+.topButton--show {
     opacity: 1;
     visibility: visible;
 }

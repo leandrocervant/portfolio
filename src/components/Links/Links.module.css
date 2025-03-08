@@ -1,0 +1,15 @@
+.separator {
+  width: 90px;
+  height: var(--spacing-xxs);
+  background-color: var(--color-text);
+}
+
+.link {
+  fill: var(--color-text);
+  cursor: pointer;
+}
+
+.link svg {
+  height: 40px;
+  width: 40px;
+}

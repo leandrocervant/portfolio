@@ -2,12 +2,7 @@ import React from "react";
 import { mergeClasses } from "../../utilities";
 import { Stack } from "../Stack";
 
-import "./Section.css";
-
-const classNames = {
-  root: "Section",
-  content: "Section__content",
-};
+import classNames from "./Section.module.css";
 
 export const Section = React.forwardRef(
   ({ children, className, ...rest }, ref) => {

@@ -3,14 +3,7 @@ import { Section } from "../Section";
 import { Stack } from "../Stack";
 import { Typography } from "../Typography";
 
-import "./Skills.css";
-
-const classNames = {
-  root: "Skills",
-  list: "Skills__list",
-  item: "Skills__item",
-  itemGroup: "Skills__item-group",
-};
+import classNames from "./Skills.module.css";
 
 const Skill = ({ name, img }) => {
   const src = new URL(`../../assets/skills/${img}.png`, import.meta.url).href;
@@ -27,7 +20,7 @@ const Skill = ({ name, img }) => {
 };
 
 const Group = ({ children }) => (
-  <Stack.Row className={classNames.itemGroup} justifyContent="center">
+  <Stack.Row className={classNames["item-group"]} justifyContent="center">
     {children}
   </Stack.Row>
 );

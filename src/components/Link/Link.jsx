@@ -1,11 +1,7 @@
 import { mergeClasses } from "../../utilities";
 import { Stack } from "../Stack";
 
-import "./Link.css";
-
-const classNames = {
-  root: "Link",
-};
+import classNames from "./Link.module.css";
 
 export const Link = ({ icon, appearance = "neutral", href }) => {
   const Component = icon;
@@ -19,10 +15,7 @@ export const Link = ({ icon, appearance = "neutral", href }) => {
 
   return (
     <Stack.Row
-      className={mergeClasses(
-        classNames.root,
-        `${classNames.root}--${appearance}`
-      )}
+      className={mergeClasses(classNames.root, classNames[appearance])}
       onClick={handleClick}
     >
       <Component />

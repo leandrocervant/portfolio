@@ -1,4 +1,4 @@
-.Contact__cards {
+.cards {
   column-gap: var(--spacing-m);
   row-gap: var(--spacing-l);
   flex-wrap: wrap;
@@ -10,7 +10,7 @@
   padding: var(--spacing-xxxl) var(--spacing-none);
 }
 
-.Contact__card {
+.card {
   cursor: pointer;
   padding: var(--spacing-m) var(--spacing-xl);
   align-items: center;
@@ -22,15 +22,15 @@
     color 0.2s ease-in-out;
 }
 
-.Contact__card:hover {
+.card:hover {
   background-color: var(--color-surface1);
 }
 
-.Contact__card svg {
+.card svg {
   margin-right: var(--spacing-m);
 }
 
-.Contact__card p {
+.card p {
   color: var(--color-primary);
   margin: var(--spacing-none);
 }
