@@ -39,9 +39,9 @@ export const Skills = () => (
       </Group>
       <Group>
         <Skill name="React" img="react" />
-        <Skill name="Git Source Control" img="git" />
         <Skill name="SQL Server" img="sql" />
         <Skill name="Mongodb" img="mongo" />
+        <Skill name="RabbitMQ" img="rabbitmq" />
       </Group>
       <Group>
         <Skill name=".NET Core" img="net" />
